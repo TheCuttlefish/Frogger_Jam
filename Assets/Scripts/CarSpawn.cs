@@ -7,10 +7,12 @@ public class CarSpawn : MonoBehaviour {
 
     public GameObject car;
 	public bool sendCarsLeft;
-    public int spawnInterval = 50;
+    public int spawnInterval = 100;
     // Use this for initialization
+   
     void Start () {
-		
+        
+      
 
     }
 	
@@ -24,12 +26,11 @@ public class CarSpawn : MonoBehaviour {
 
 	int spawnTimer = 0;
 
-	void Update () {
+	void FixedUpdate () {
 		spawnTimer++;
 
 		if (spawnTimer > spawnInterval) {
 			spawnACar ();
-            // spawnTimer = Random.Range(0, 30);
             spawnTimer = 0;
 		}
 

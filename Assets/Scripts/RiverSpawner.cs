@@ -8,7 +8,7 @@ public class RiverSpawner : MonoBehaviour {
     public GameObject plank;
     public GameObject water;
     public bool goLeft;
-    public int spawnInterval = 100;
+    public int spawnInterval = 49;
     // Use this for initialization
     void Start()
     {
@@ -31,7 +31,7 @@ public class RiverSpawner : MonoBehaviour {
 
     int spawnTimer = 0;
     int randomNum;
-    void Update()
+    void FixedUpdate()
     {
         spawnTimer++;
 
